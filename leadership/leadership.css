@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color of the body */
+body {
+    background-color: #f4f1de;
+}
+
+/* Style the header */
+header {
+    background-color: #3d405b;
+    color: #f4f1de;
+    padding: 1% 1%;
+}
+
+/* Style the main title in the header */
+header h1 {
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Style the subtitle in the header */
+header p {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+/* make the main flexbox for nav and main */
+#flex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* style the backgound of the nav menu */
+nav ul {
+    background-color: #e07a5f;
+    width: 30vw;
+    height: auto;
+    min-height: 100vh; 
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* style the nav buttons of the nav menu */
+nav ul li {
+    background-color: #f4f1de;
+    border: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 2%;
+    margin: 8% 8%;
+    height: 30%;
+    text-align: center;
+    
+}
+
+/* stlye the font in the nav menu buttons */
+nav ul li a {
+    color:#3d405b;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    font-size: calc(3.5vw + 2px);
+    text-decoration: none;
+}
+
+/* format the main size and placement */
+main {
+    width: 70vw;
+    height: auto;
+    min-height: 100vh; 
+    margin-top: 4vh;
+}
+
+/* style the main header of the page */
+main h2 {
+    color: #3d405b;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    text-align: center;
+    font-size: calc(5vw + 4px);
+}
+
+/* Style each leadership role */
+.leader {
+    margin-top: 5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 5vw;
+    border-left: 1vw solid #3d405b;
+    padding: 3vw;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-size: calc(2vw + 3px);
+}
+
+/* style the footer */
+footer {
+    background-color: #3d405b;
+    color: #f4f1de;
+    padding: 1% 1%;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+/* make the credit tag yellow */
+#credit {
+    color: yellow;
+}
+
+/* adjust for smaller screens */
+@media screen and (max-width: 750px){
+    /* change the nav and main flex to be a column layout */
+    #flex1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* change the dimensions of the nav menu */
+    nav ul {
+        width: 100vw;
+        height: auto;
+        min-height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* change the spacing of the items of the nav menu */
+    nav ul li {
+        margin: 2% 1%;
+        padding: 2% 2%;
+    }
+
+    /* readjust the main width */
+    main {
+        width: 100vw;
+    }
+}

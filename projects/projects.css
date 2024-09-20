@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set default background color and add background image */
+body {
+    background-image: url("../src/blackboard.jpg");
+    background-color: #f4f1de;
+}
+
+/* Style the header */
+header {
+    background-color: #3d405b;
+    color: #f4f1de;
+    font-weight: bold;
+    padding: 1% 1%;
+}
+
+/* Style the main title in the header */
+header h1 {
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Style the subtitle in the header */
+header p {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+/* make the main flexbox for nav and main */
+#flex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* style the backgound of the nav menu */
+nav ul {
+    background-color: #e07a5f;
+    width: 30vw;
+    height: auto;
+    min-height: 100vh; 
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* style the nav buttons of the nav menu */
+nav ul li {
+    background-color: #f4f1de;
+    border: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 2%;
+    margin: 8% 8%;
+    height: 30%;
+    text-align: center;
+    
+}
+
+/* stlye the font in the nav menu buttons */
+nav ul li a {
+    color:#3d405b;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    font-size: calc(3.5vw + 2px);
+    text-decoration: none;
+}
+
+/* format the main size and placement */
+main {
+    width: 70vw;
+    height: auto;
+    min-height: 100vh; 
+}
+
+/* style the main header of the page */
+main h2 {
+    height: 15vh;
+    background-color: #f4f1de;
+    color: #3d405b;
+    font-size: calc(6vw + 4px);
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style the calculator elements into a column */
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    font-size: calc(2vw + 3px);
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    color: #3d405b;
+}
+
+/* give each label a background */
+label {
+    background-color: #f4f1de;
+    border: hidden;
+    border-radius: 8px;
+    padding: 2vh 2vw;
+}
+
+/* style the input boxes */
+input {
+    width: 40vw;
+    height: 8vw;
+    margin: 3vh auto;
+    border: 0.5vw solid #3d405b;
+    text-align: center;
+    font-size: calc(3vw + 4px);
+    color: #e07a5f;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+}
+
+/* style the buttons */
+button {
+    background-color: #e07a5f;
+    text-align: center;
+    text-decoration: none;
+    font-size: calc(3vw + 4px);
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    border-radius: 50%;
+}
+
+/* style the output */
+#output {
+    margin-top: 5vh;
+    font-size: calc(6vw + 4px);
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+}
+
+/* style the footer */
+footer {
+    background-color: #3d405b;
+    color: #f4f1de;
+    padding: 1% 1%;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+/* make the credit tag yellow */
+#credit {
+    color: yellow;
+}
+
+/* adjust for smaller screens */
+@media screen and (max-width: 750px){
+    /* change the nav and main flex to be a column layout */
+    #flex1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* change the dimensions of the nav menu */
+    nav ul {
+        width: 100vw;
+        height: auto;
+        min-height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* change the spacing of the items of the nav menu */
+    nav ul li {
+        margin: 2% 1%;
+        padding: 2% 2%;
+    }
+
+    /* readjust the main width */
+    main {
+        width: 100vw;
+    }
+}
